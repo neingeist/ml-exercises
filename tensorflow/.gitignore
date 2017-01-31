@@ -1,0 +1,5 @@
+venv/
+.ipynb_checkpoints
+*.pyc
+.idea/tasks.xml
+.idea/workspace.xml
