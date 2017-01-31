@@ -2,17 +2,14 @@
 
 BASEDIR=`dirname $0`/..
 VENV=venv
-#export TF_BINARY_URL=https://storage.googleapis.com/tensorflow/linux/gpu/tensorflow_gpu-0.12.1-cp27-none-linux_x86_64.whl
 
 
 if [ ! -d "$BASEDIR/$VENV" ]; then
     virtualenv -q $BASEDIR/$VENV --system-site-packages
     echo "virtualenv $VENV created."
 fi
-
 pip=$BASEDIR/$VENV/bin/pip
 
-#$pip install --upgrade $TF_BINARY_URL
 
 if [ ! -f "$BASEDIR/$VENV/updated" -o $BASEDIR/requirements.txt -nt $BASEDIR/$VENV/updated ]; then
     $pip install -r $BASEDIR/requirements.txt
