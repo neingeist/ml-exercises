@@ -1,0 +1,4 @@
+keras
+tensorflow-gpu==0.12.1
+notebook
+matplotlib
