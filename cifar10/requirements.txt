@@ -1,4 +1,6 @@
+tensorflow-gpu
 keras
-tensorflow-gpu==0.12.1
-notebook
+h5py
+
+jupyter
 matplotlib
