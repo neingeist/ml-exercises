@@ -1,6 +1,7 @@
 tensorflow-gpu
 keras
 h5py
+sklearn
 
 jupyter
 matplotlib
