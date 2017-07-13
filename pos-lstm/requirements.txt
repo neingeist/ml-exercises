@@ -1,3 +1,5 @@
 jupyter
 tensorflow-gpu
 keras
+sklearn
+matplotlib
