@@ -17,7 +17,7 @@ def get_sequence1(n_timesteps):
 
 
 def get_sequence2(n_timesteps):
-    """generate random numbers, y is 1 for steps > 0.5"""
+    """generate random numbers, y = 1 for steps > 0.5"""
     X = np.array([random() for _ in range(n_timesteps)])
 
     y = X-np.concatenate(([0], X))[:-1] > 0.5
@@ -26,8 +26,7 @@ def get_sequence2(n_timesteps):
 
 
 def get_sequence3(n_timesteps):
-    """generate a sequence with small and big steps, the net should learn to
-       detect the big steps"""
+    """generate a sequence with small (y=0) and big (y=1) steps"""
     small_step = random()
     big_step = small_step + 2*random()
     big_step_prob = 0.1
