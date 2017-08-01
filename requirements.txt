@@ -1,4 +1,6 @@
 jupyter
-tensorflow-gpu
-keras
 matplotlib
+
+theano > 0.9.0
+pygpu
+keras
